@@ -18,6 +18,10 @@
 		33EF364D1E8B851800B722AC /* MVCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EF364C1E8B851800B722AC /* MVCController.m */; };
 		33EF36501E8B859A00B722AC /* MVCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EF364F1E8B859A00B722AC /* MVCView.m */; };
 		33EF36531E8B85B400B722AC /* Paper.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EF36521E8B85B400B722AC /* Paper.m */; };
+		33EF36571E8B913400B722AC /* MVPController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EF36561E8B913400B722AC /* MVPController.m */; };
+		33EF365A1E8B914200B722AC /* Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EF36591E8B914200B722AC /* Presenter.m */; };
+		33EF365D1E8B915500B722AC /* MVPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EF365C1E8B915500B722AC /* MVPView.m */; };
+		33EF36601E8B916A00B722AC /* MVPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EF365F1E8B916A00B722AC /* MVPModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,14 @@
 		33EF364F1E8B859A00B722AC /* MVCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVCView.m; sourceTree = "<group>"; };
 		33EF36511E8B85B400B722AC /* Paper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paper.h; sourceTree = "<group>"; };
 		33EF36521E8B85B400B722AC /* Paper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Paper.m; sourceTree = "<group>"; };
+		33EF36551E8B913400B722AC /* MVPController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPController.h; sourceTree = "<group>"; };
+		33EF36561E8B913400B722AC /* MVPController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPController.m; sourceTree = "<group>"; };
+		33EF36581E8B914200B722AC /* Presenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Presenter.h; sourceTree = "<group>"; };
+		33EF36591E8B914200B722AC /* Presenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Presenter.m; sourceTree = "<group>"; };
+		33EF365B1E8B915500B722AC /* MVPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPView.h; sourceTree = "<group>"; };
+		33EF365C1E8B915500B722AC /* MVPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPView.m; sourceTree = "<group>"; };
+		33EF365E1E8B916A00B722AC /* MVPModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPModel.h; sourceTree = "<group>"; };
+		33EF365F1E8B916A00B722AC /* MVPModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,12 +90,15 @@
 				33E169871E8B6F9800A2864E /* AppDelegate.m */,
 				33E169891E8B6F9800A2864E /* ViewController.h */,
 				33E1698A1E8B6F9800A2864E /* ViewController.m */,
-				33EF364B1E8B851800B722AC /* MVCController.h */,
-				33EF364C1E8B851800B722AC /* MVCController.m */,
-				33EF364E1E8B859A00B722AC /* MVCView.h */,
-				33EF364F1E8B859A00B722AC /* MVCView.m */,
-				33EF36511E8B85B400B722AC /* Paper.h */,
-				33EF36521E8B85B400B722AC /* Paper.m */,
+				33EF36551E8B913400B722AC /* MVPController.h */,
+				33EF36561E8B913400B722AC /* MVPController.m */,
+				33EF365B1E8B915500B722AC /* MVPView.h */,
+				33EF365C1E8B915500B722AC /* MVPView.m */,
+				33EF365E1E8B916A00B722AC /* MVPModel.h */,
+				33EF365F1E8B916A00B722AC /* MVPModel.m */,
+				33EF36581E8B914200B722AC /* Presenter.h */,
+				33EF36591E8B914200B722AC /* Presenter.m */,
+				33EF36541E8B90F400B722AC /* MVC */,
 				33EF364A1E8B84CF00B722AC /* Print */,
 				33E169831E8B6F9800A2864E /* Supporting Files */,
 			);
@@ -112,6 +127,19 @@
 				33E1699E1E8B6FE300A2864E /* Employee.m */,
 			);
 			name = Print;
+			sourceTree = "<group>";
+		};
+		33EF36541E8B90F400B722AC /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				33EF364B1E8B851800B722AC /* MVCController.h */,
+				33EF364C1E8B851800B722AC /* MVCController.m */,
+				33EF364E1E8B859A00B722AC /* MVCView.h */,
+				33EF364F1E8B859A00B722AC /* MVCView.m */,
+				33EF36511E8B85B400B722AC /* Paper.h */,
+				33EF36521E8B85B400B722AC /* Paper.m */,
+			);
+			name = MVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,10 +214,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33EF365D1E8B915500B722AC /* MVPView.m in Sources */,
+				33EF365A1E8B914200B722AC /* Presenter.m in Sources */,
 				33E1699F1E8B6FE300A2864E /* Employee.m in Sources */,
 				33EF36501E8B859A00B722AC /* MVCView.m in Sources */,
 				33EF36531E8B85B400B722AC /* Paper.m in Sources */,
+				33EF36601E8B916A00B722AC /* MVPModel.m in Sources */,
 				33E1698B1E8B6F9800A2864E /* ViewController.m in Sources */,
+				33EF36571E8B913400B722AC /* MVPController.m in Sources */,
 				33EF364D1E8B851800B722AC /* MVCController.m in Sources */,
 				33E169881E8B6F9800A2864E /* AppDelegate.m in Sources */,
 				33E169851E8B6F9800A2864E /* main.m in Sources */,
