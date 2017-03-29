@@ -7,9 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "Manager.h"
-#import "Employee.h"
-
+#import "MVCController.h"
 
 @interface ViewController ()
 
@@ -17,10 +15,19 @@
 
 @implementation ViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [Employee shareInstance];
-    [[Manager shareInstance] beginPrintTask];}
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self showMVC];
+    });
+}
 
+- (void)showMVC {
+    MVCController *c = [MVCController new];
+    [self presentViewController:c  animated:YES completion:nil];
+}
 
 @end

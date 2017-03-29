@@ -15,6 +15,9 @@
 		33E169931E8B6F9800A2864E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33E169911E8B6F9800A2864E /* LaunchScreen.storyboard */; };
 		33E1699C1E8B6FDB00A2864E /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E1699B1E8B6FDB00A2864E /* Manager.m */; };
 		33E1699F1E8B6FE300A2864E /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E1699E1E8B6FE300A2864E /* Employee.m */; };
+		33EF364D1E8B851800B722AC /* MVCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EF364C1E8B851800B722AC /* MVCController.m */; };
+		33EF36501E8B859A00B722AC /* MVCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EF364F1E8B859A00B722AC /* MVCView.m */; };
+		33EF36531E8B85B400B722AC /* Paper.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EF36521E8B85B400B722AC /* Paper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,12 @@
 		33E1699D1E8B6FE300A2864E /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		33E1699E1E8B6FE300A2864E /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		33E169A01E8B7A4000A2864E /* PrintNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintNotification.h; sourceTree = "<group>"; };
+		33EF364B1E8B851800B722AC /* MVCController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVCController.h; sourceTree = "<group>"; };
+		33EF364C1E8B851800B722AC /* MVCController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVCController.m; sourceTree = "<group>"; };
+		33EF364E1E8B859A00B722AC /* MVCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVCView.h; sourceTree = "<group>"; };
+		33EF364F1E8B859A00B722AC /* MVCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVCView.m; sourceTree = "<group>"; };
+		33EF36511E8B85B400B722AC /* Paper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paper.h; sourceTree = "<group>"; };
+		33EF36521E8B85B400B722AC /* Paper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Paper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,11 +78,13 @@
 				33E169871E8B6F9800A2864E /* AppDelegate.m */,
 				33E169891E8B6F9800A2864E /* ViewController.h */,
 				33E1698A1E8B6F9800A2864E /* ViewController.m */,
-				33E169A01E8B7A4000A2864E /* PrintNotification.h */,
-				33E1699A1E8B6FDB00A2864E /* Manager.h */,
-				33E1699B1E8B6FDB00A2864E /* Manager.m */,
-				33E1699D1E8B6FE300A2864E /* Employee.h */,
-				33E1699E1E8B6FE300A2864E /* Employee.m */,
+				33EF364B1E8B851800B722AC /* MVCController.h */,
+				33EF364C1E8B851800B722AC /* MVCController.m */,
+				33EF364E1E8B859A00B722AC /* MVCView.h */,
+				33EF364F1E8B859A00B722AC /* MVCView.m */,
+				33EF36511E8B85B400B722AC /* Paper.h */,
+				33EF36521E8B85B400B722AC /* Paper.m */,
+				33EF364A1E8B84CF00B722AC /* Print */,
 				33E169831E8B6F9800A2864E /* Supporting Files */,
 			);
 			path = PrintDemo;
@@ -89,6 +100,18 @@
 				33E169841E8B6F9800A2864E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33EF364A1E8B84CF00B722AC /* Print */ = {
+			isa = PBXGroup;
+			children = (
+				33E169A01E8B7A4000A2864E /* PrintNotification.h */,
+				33E1699A1E8B6FDB00A2864E /* Manager.h */,
+				33E1699B1E8B6FDB00A2864E /* Manager.m */,
+				33E1699D1E8B6FE300A2864E /* Employee.h */,
+				33E1699E1E8B6FE300A2864E /* Employee.m */,
+			);
+			name = Print;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +187,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				33E1699F1E8B6FE300A2864E /* Employee.m in Sources */,
+				33EF36501E8B859A00B722AC /* MVCView.m in Sources */,
+				33EF36531E8B85B400B722AC /* Paper.m in Sources */,
 				33E1698B1E8B6F9800A2864E /* ViewController.m in Sources */,
+				33EF364D1E8B851800B722AC /* MVCController.m in Sources */,
 				33E169881E8B6F9800A2864E /* AppDelegate.m in Sources */,
 				33E169851E8B6F9800A2864E /* main.m in Sources */,
 				33E1699C1E8B6FDB00A2864E /* Manager.m in Sources */,
@@ -324,6 +350,7 @@
 				33E169991E8B6F9800A2864E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
