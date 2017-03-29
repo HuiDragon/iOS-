@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface Manager : NSObject
+
 + (instancetype)shareInstance;
 
-- (void)celebratePrintDone;
-
 - (void)beginPrintTask;
+
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "Employee.h"
-#import "Manager.h"
 
 @implementation Employee
 + (instancetype)shareInstance {
@@ -24,6 +23,8 @@
 - (void)doPrintJob {
     
     NSLog(@"doing printing job");
-    [[Manager shareInstance] celebratePrintDone];
+    if (_delegate) {
+        [_delegate celebratePrintDone];
+    }
 }
 @end

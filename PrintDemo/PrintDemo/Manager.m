@@ -9,6 +9,10 @@
 #import "Manager.h"
 #import "Employee.h"
 
+@interface Manager ()<EmployeePrintDelegate>
+
+@end
+
 @implementation Manager
 + (instancetype)shareInstance {
     static Manager *instance = nil;
@@ -21,11 +25,17 @@
     return instance;
 }
 
+
+
+- (void)beginPrintTask {
+    [Employee shareInstance].delegate = self;
+    [[Employee shareInstance] doPrintJob];
+}
+
+#pragma mark- EmployeePrintDelegate
+
 - (void)celebratePrintDone {
     NSLog(@"celebrate print done");
 }
 
-- (void)beginPrintTask {
-    [[Employee shareInstance] doPrintJob];
-}
 @end

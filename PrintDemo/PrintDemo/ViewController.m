@@ -19,6 +19,6 @@
     [super viewDidLoad];
     [[Manager shareInstance] beginPrintTask];
 }
- 
+
 
 @end
