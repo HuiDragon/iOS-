@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "Manager.h"
+#import "Employee.h"
+
 
 @interface ViewController ()
 
@@ -17,8 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[Manager shareInstance] beginPrintTask];
-}
+    [Employee shareInstance];
+    [[Manager shareInstance] beginPrintTask];}
 
 
 @end

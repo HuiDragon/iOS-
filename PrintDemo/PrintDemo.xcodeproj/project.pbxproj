@@ -32,6 +32,7 @@
 		33E1699B1E8B6FDB00A2864E /* Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
 		33E1699D1E8B6FE300A2864E /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		33E1699E1E8B6FE300A2864E /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		33E169A01E8B7A4000A2864E /* PrintNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintNotification.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +69,7 @@
 				33E169871E8B6F9800A2864E /* AppDelegate.m */,
 				33E169891E8B6F9800A2864E /* ViewController.h */,
 				33E1698A1E8B6F9800A2864E /* ViewController.m */,
+				33E169A01E8B7A4000A2864E /* PrintNotification.h */,
 				33E1699A1E8B6FDB00A2864E /* Manager.h */,
 				33E1699B1E8B6FDB00A2864E /* Manager.m */,
 				33E1699D1E8B6FE300A2864E /* Employee.h */,

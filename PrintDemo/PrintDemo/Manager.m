@@ -7,11 +7,8 @@
 //
 
 #import "Manager.h"
-#import "Employee.h"
+#import "PrintNotification.h"
 
-@interface Manager ()<EmployeePrintDelegate>
-
-@end
 
 @implementation Manager
 + (instancetype)shareInstance {
@@ -25,14 +22,21 @@
     return instance;
 }
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(celebratePrintDone) name:Notif_PrintTaskDone object:nil];
+    }
+    return self;
+}
 
 
 - (void)beginPrintTask {
-    [Employee shareInstance].delegate = self;
-    [[Employee shareInstance] doPrintJob];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:Notif_BeginPrintTask object:nil];
+    
 }
-
-#pragma mark- EmployeePrintDelegate
 
 - (void)celebratePrintDone {
     NSLog(@"celebrate print done");
