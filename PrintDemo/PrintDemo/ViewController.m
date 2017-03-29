@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Manager.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [[Manager shareInstance] beginPrintTask];
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
+ 
 
 @end
